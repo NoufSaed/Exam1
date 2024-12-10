@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../cx-203-debugging-exam/4-bit-counter/counter_4bit.sv" \
+"../../../../../cx-203-debugging-exam/4-bit-counter/d_flipflop.sv" \
+"../../../../../cx-203-debugging-exam/4-bit-counter/d_latch_asyn_rstn.sv" \
+"../../../../../cx-203-debugging-exam/4-bit-counter/mux2x1.sv" \
+"../../../../Exam.srcs/sim_1/new/tb_counter.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
